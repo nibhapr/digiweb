@@ -1,12 +1,13 @@
 ---
-title: tags that make SEO eas
-description: the basic building blocks of any Astro project
+title: Website design and developments
+slug: webdesign
+description: Experience the power of advanced SEO web design
 category:
   - One
 tags:
-  - Tailwind
   - Astro
-  - Jamstack
+  - React
+  - Vue Js
 pubDate: 2023-09-01
 coverSrc: "../../digiimpact.avif"
 coverAlt: "AstroVerse-Aliases"

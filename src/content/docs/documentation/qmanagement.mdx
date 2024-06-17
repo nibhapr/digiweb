@@ -1,68 +1,74 @@
 ---
-title: Whatsapp Api Integration
-description: Integrate whatsapp api to send notification from your application and website.
+title: Queue Management system
+description: Queue Management with Laravel backend and flutter application.
 ---
 
-Implement the PHP code to make a POST request to the WhatsApp API endpoint with the prepared data.
+By combining the power of Laravel robust backend with Flutter's versatile mobile app development capabilities, our Queue Management System promises to streamline operations, enhance customer satisfaction, and optimize resource utilization.
 
-### 1.PHP Implementation
+### 1.Flutter Mobile Application
 
-```mdx
-<?php
+<img
+	class="rounded-lg overflow-hidden border"
+	src="/token.png"
+	width={1020}
+	height={510}
+	alt="Image"
+/>
 
-// Prepare data
-$data = [
-    'api_key' => 'Your_API_Key',
-    'sender' => 'Your_Sender_Name',
-    'number' => 'Recipient_Phone_Number',
-    'message' => 'Your_Message_Content'
-];
+### 2. Token Display
 
-// Initialize CURL
-$curl = curl_init();
+<img
+	class="rounded-lg overflow-hidden border"
+	src="/display.png"
+	width={1020}
+	height={510}
+	alt="Image"
+/>
 
-// Set CURL options
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://saakshi.cloud/send-message', // WhatsApp API endpoint URL
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => json_encode($data), // Convert data to JSON format
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/json'
-  ),
-));
+Queue management systems are crucial for efficiently handling customer flow
+and optimizing operational efficiency in various organizations such as
+hospitals,banks, exchanges, and other service-oriented establishments.
+Here are essential features that a robust queue management system should offer
 
-// Execute CURL request
-$response = curl_exec($curl);
+1: Customer Queuing
 
-// Close CURL connection
-curl_close($curl);
+Virtual Queues: Allow customers to join queues remotely via mobile app
+or website, reducing physical wait times.On-Site Check-In: Provide
+options for customers to check in physically using kiosks or reception desks.
 
-// Output response
-echo $response;
+2: Online Queue Status for Clients
 
-?>
-```
+Our queue management system provides real-time online queue status updates
+for clients, ensuring transparency and convenience. Clients can access this
+information from their smartphones, tablets, or computers via a secure web
+portal or mobile app. This feature allows clients to see their position in
+the queue, estimated wait times, and any notifications regarding their turn.
+By offering this service online, we enhance customer satisfaction by reducing
+uncertainty and allowing clients to plan their time effectively.
 
+3: Live Token Status
+
+The system includes live token status updates, displaying current token numbers
+being served and those next in line. This real-time display ensures that both
+clients and staff can track the progress of the queue efficiently. It reduces
+confusion and enhances operational efficiency by providing clear, up-to-date
+information to everyone involved. Clients can easily see when their turn is
+approaching, minimizing frustration and wait times
+
+4: WhatsApp Token Delivery
+
+Upon generating a token, clients have the option to receive their token number
+and updates directly via WhatsApp. Simply provide your WhatsApp number during
+token generation, and notifications about queue status and turn updates will be
+sent directly to your device. This integration enhances communication convenience,
+ensuring clients stay informed without needing to check the app or web portal
+constantly.
+
+<Callout icon="" type="warning">
+
+Experience our queue management system firsthand with a 14-day trial. Contact us today to explore how our system can streamline your operations, enhance customer satisfaction, and optimize efficiency. During the trial period, you'll have access to all features, including real-time online queue status updates, live token status, and average token calling time displays. Get started now and discover the benefits of our innovative queue management solution
+
+</Callout>
 <Callout>
-
-Test the integration by executing the PHP script. Verify that the message is successfully sent to the recipient's WhatsApp number.
-
-</Callout>
-
-<Callout icon="💡" type="info">
-
-Congratulations! You have successfully integrated WhatsApp API into your PHP application. You can now send messages programmatically to WhatsApp users
-
-</Callout>
-
-<Callout icon="⚠️" type="warning">
-
-Contact us to obtain the API Key required for authentication.
-
+Contact Our Sales  :7012749946
 </Callout>

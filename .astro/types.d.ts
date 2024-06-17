@@ -173,6 +173,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"documentation/webdesign.mdx": {
+	id: "documentation/webdesign.mdx";
+  slug: "documentation/webdesign";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "documentation/whatsapp.mdx": {
 	id: "documentation/whatsapp.mdx";
   slug: "documentation/whatsapp";
@@ -180,16 +187,16 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"getting-started.mdx": {
-	id: "getting-started.mdx";
-  slug: "getting-started";
+"in-progress.mdx": {
+	id: "in-progress.mdx";
+  slug: "in-progress";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"in-progress.mdx": {
-	id: "in-progress.mdx";
-  slug: "in-progress";
+"webdesign.mdx": {
+	id: "webdesign.mdx";
+  slug: "webdesign";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -256,7 +263,7 @@ declare module 'astro:content' {
 "posts": {
 "astro-components copy 4.md": {
 	id: "astro-components copy 4.md";
-  slug: "astro-components-copy-4";
+  slug: "webdesign";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
