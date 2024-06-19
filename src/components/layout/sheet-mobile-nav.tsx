@@ -24,11 +24,6 @@ export function SheetMobileNav({
 			self.findIndex((t) => t.href === item.href && t.title === item.title),
 	);
 
-	// [
-	//     ...marketingConfig.mainNav,
-	//     ...docsConfig.mainNav,
-	//   ]
-
 	return (
 		<Sheet open={open} onOpenChange={setOpen}>
 			<SheetTrigger asChild>
