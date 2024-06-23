@@ -23,11 +23,41 @@ const {
 	image,
 	disableIndexing = false,
 } = Astro.props as Props;
+const structuredData = {
+	"@context": "http://schema.org",
+	"@type": "Cheapest Web design company",
+	name: "Digiimpact Ernakulam",
+	url: "https://digiimpact.in",
+	image: "https://digiimpact.in/digiimpact.jpg",
+	description:
+		description ??
+		"Boosting businesses in Kerala, with top-tier web design, digital marketing, and app development services.Cheapest webdesign in kerala.",
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "1555/4 Office -Royal Plaza Building Periyar Nagar, Aluva",
+		addressLocality: "Aluva Metro Station",
+		addressRegion: "Ernakulam",
+		postalCode: "683101",
+		addressCountry: "IN",
+	},
+	contactPoint: {
+		"@type": "Company",
+		telephone: "+917012997841",
+		contactType: "Person",
+	},
+};
 ---
 
 <html lang="en">
 	<head>
-		<!-- SEO. -->
+		{
+			structuredData && (
+				<script
+					type="application/ld+json"
+					set:html={JSON.stringify(structuredData)}
+				/>
+			)
+		}
 		<SEO
 			title={title}
 			description={seoConfig.description || description}
@@ -53,6 +83,7 @@ const {
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<link
 			rel="apple-touch-icon"
 			sizes="57x57"
