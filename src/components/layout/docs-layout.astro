@@ -19,16 +19,6 @@ const { title, description } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
-	<!-- if using only normals links  -->
-	<!-- <MainNav items={docsConfig.mainNav} slot="left-header" />
-    <SheetMobileNav
-      mainNavItems={[...docsConfig.mainNav]}
-      sidebarNavItems={[...docsConfig.sidebarNav]}
-      slot="mobile-nav-header"
-      client:load
-    /> -->
-
-	<!-- if use Navigation Menu on desktop -->
 	<MainNavigationMenu slot="left-header" client:load />
 	<SheetMobileNav
 		mainNavItems={[...navMenuConfig.links]}

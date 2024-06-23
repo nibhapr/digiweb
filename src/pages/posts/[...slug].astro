@@ -1,5 +1,4 @@
 ---
-import DocsLayout from "@component/layout/docs-layout.astro";
 import DocsSidebarNav from "@/components/layout/sidebar-nav.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 import DocsPager from "@/components/pager.astro";
@@ -10,8 +9,7 @@ import DocsPageHeader from "@/components/page-header.astro";
 import { docsConfig } from "@/config/docs";
 import { MdxComponents } from "@/content/mdx-components";
 import { getTableOfContents } from "@util/common";
-import Header from "@component/global/Header/Header.astro";
-import FooterSection from "@component/FooterSection.astro";
+import Layout from "@component/global/Layout/Layout.astro";
 
 export async function getStaticPaths() {
 	const docs = await getCollection("docs");
